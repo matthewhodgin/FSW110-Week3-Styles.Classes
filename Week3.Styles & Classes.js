@@ -1,19 +1,12 @@
-
-var h2Element = document.createElement('h2') 
-h2Element.innerText = 'Hello Again, World'
-document.body.append(h2Element);
-
-var h2List = document.getElementById("h2")
-for (var i = 0; i < h2Element.length; i++) {
-    h2List.innerHTML += 5
-
-
-var heading = document.getElementById('heading');
-heading.style.color = 'cornflowerblue';
-heading.fontsize(20);
-heading.fontweight(lighter);
-heading.fontfamily(sans-serif);
-
-heading.classList.add('new-class')
-console.log(heading.classList)
+var h2List = document.createElement("ul");
+for (var i = 0; i < 5; i++) {
+var h2Element = document.createElement("h2");
+h2Element.innerText = 'Hello Again, World';
+h2List.append(h2Element);
+h2Element.style.color = 'cornflowerblue';
+h2Element.style.fontSize = '20px';
+h2Element.style.fontWeight = 'lighter';
+h2Element.style.fontFamily = 'sans-serif';
+h2Element.classList.add('border');
 }
+document.body.append(h2List);
